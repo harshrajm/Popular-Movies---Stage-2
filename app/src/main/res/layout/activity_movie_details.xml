@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_movie_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.popularmoviesone.MovieDetailsActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_poster_mini"
+            android:padding="8dp"
+            android:layout_width="180dp"
+            android:layout_height="220dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/good_fellas"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_movie_title"
+                android:layout_marginTop="28dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Good Fellas"
+                android:textSize="28sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tv_rating"
+                android:textColor="@android:color/secondary_text_light"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8.9/10"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/tv_release_date"
+                android:textColor="@android:color/secondary_text_light"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1994-02-23"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/trailer_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loading..."
+                android:layout_weight="1"
+                android:onClick="trailerBtnClicked"/>
+            <Button
+                android:id="@+id/save_mv_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="mark favorite"
+                android:layout_weight="1"
+                android:onClick="trailerBtnClicked"/>
+
+        </LinearLayout>
+    <TextView
+        android:textColor="@android:color/secondary_text_light"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="18dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Synopsis:"
+        android:textSize="18sp"/>
+
+
+    <TextView
+        android:id="@+id/tv_synopsis"
+        android:textSize="18sp"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="serif"
+        android:text="The enhancement of paid maternity leave for women in the organised sector to 26 weeks from 12 is a progressive step, one that should lead to closer scrutiny of the difficulties faced by unorganised workers who fall beyond the scope of any worthwhile labour welfare measures. It is wholly welcome that such a benefit is being introduced with an amendment to the Maternity Benefit Act, 1961, in line with several expert recommendations including that of the World Health Organisation, which recommends exclusive breastfeeding of children for the first 24 weeks. Giving some benefits to adoptive mothers and women who get childre The enhancement of paid maternity leave for women in the organised sector to 26 weeks from 12 is a progressive step, one that should lead to closer scrutiny of the difficulties faced by unorganised workers who fall beyond the scope of any worthwhile labour welfare measures. It is wholly welcome that such a benefit is being introduced with an amendment to the Maternity Benefit Act, 1961"/>
+
+        <TextView
+            android:textColor="@android:color/secondary_text_light"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="18dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reviews:"
+            android:textSize="18sp"/>
+
+
+        <TextView
+            android:id="@+id/tv_reviews"
+            android:textSize="18sp"
+            android:lineSpacingMultiplier="1.2"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Loading..."
+            android:fontFamily="serif"/>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

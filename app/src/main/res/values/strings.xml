@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="api_key">enter api key here</string>
+
+
+    <string name="app_name">PopularMoviesTwo</string>
+    <string name="favorite_added">Added to Favorites list</string>
+    <string name="favorite_removed">Removed from Favorites list</string>
+    <string name="top_rated">Top Rated movies</string>
+    <string name="most_popular">Most Popular movies</string>
+    <string name="saved_movies">Favorite Movies</string>
+    <string name="unmark_favorite">Unmark Favorite</string>
+    <string name="watch_trailer">Watch Trailer</string>
+    <string name="no_trailer">No Trailer</string>
+    <string name="no_reviews">No Reviews</string>
+
+</resources>
